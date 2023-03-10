@@ -20,8 +20,9 @@
 #search {
   height: 50px;
   width: 350px;
-  padding: 10px;
+  padding: 5px;
   position: relative;
+  text-align: center;
   top: 10px;
   background-color: beige;
   margin-left: 200px;
@@ -54,6 +55,9 @@
 #home,
 #signup,
 #plan {
+  color: rgb(250, 168, 165);
+  font-weight: bold;
+  font-size: large;
   cursor: pointer;
   width: 100%;
   text-align: center;
@@ -367,10 +371,10 @@ td.default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 175px;
+  height: 240px;
   padding: 5px;
   margin: 25px;
-  width: 150px;
+  width: 310px;
   box-shadow: 0px 15px 40px #0a0a0a66;
   background-repeat: no-repeat;
   background-size: cover;
@@ -515,7 +519,7 @@ td.default {
   #trackslist {
     flex-direction: column;
     flex-wrap: wrap;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
   }
 
   .slider {
@@ -534,7 +538,6 @@ td.default {
 
   .songbox {
     width: 80%;
-    height: 20%;
     margin: 20px;
   }
 

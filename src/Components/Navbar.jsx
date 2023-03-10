@@ -11,7 +11,7 @@ const Navbar = () => {
           <NavLink to={"/"} id="home">Home</NavLink>
           <NavLink to={"/plans"} id="plan">Plans</NavLink>
           <NavLink to={"/signup"} id="signup">Sign up</NavLink>
-          <input type="text" placeholder="search your songs" name="search" id="search"/>
+          <input type="text" placeholder="search your videos" name="search" id="search"/>
         </div>
       </header>
     </>
