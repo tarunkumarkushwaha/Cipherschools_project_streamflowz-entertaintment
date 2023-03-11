@@ -1,27 +1,17 @@
-import React from 'react'
-import Videoicons from './Videoicons'
+import React, { useState } from 'react'
+import Videolist from './Videolist'
+import Videoplayer from './Videoplayer'
 
 const Videopage = () => {
-  const caller =()=>{
-    console.log("video clicked")
+  const [clicked, setclicked] = useState(false)
+
+  const clickhandler =(e)=>{
+    console.log(e.target)
   }
     return (
     <>
-    <div id="playlist">
-        <div id="trackslist">
-          <Videoicons caller={caller}/>
-          <Videoicons/>
-          <Videoicons/> 
-          <Videoicons/>
-          <Videoicons/>
-          <Videoicons/>
-          <Videoicons/>
-          <Videoicons/>
-          <Videoicons/>
-          <Videoicons/>
-          <Videoicons/>
-          <Videoicons/>
-        </div>
+    <div id="playlist" onClick={clickhandler}>
+        {clicked?<Videoplayer/>:<Videolist/>}
         </div>
     </>
   )

@@ -409,14 +409,14 @@ td.default {
 
 .songnames {
   position: relative;
-  top: 25%;
+  top: 35%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #cec1bf;
+  background-color: #cec1bf96;
   margin: 10px;
   border-radius: 15px;
-  width: 100px;
+  width: 300px;
   height: 50px;
 }
 
