@@ -14,9 +14,6 @@ const Videolist = () => {
           <Videoicons/>
           <Videoicons/>
           <Videoicons/>
-          <Videoicons/>
-          <Videoicons/>
-          <Videoicons/>
         </div>
     </>
   )

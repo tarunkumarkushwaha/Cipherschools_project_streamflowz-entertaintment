@@ -39,6 +39,12 @@
   color: aliceblue;
 }
 
+.mainmenu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .flex-row-center {
   display: flex;
   flex-direction: row;
@@ -70,12 +76,26 @@
   background: rgba(230, 41, 41, 0.678);
 }
 
+.discover {
+  border-radius: 15px;
+  width: 85%;
+  height: 240px;
+  background-image: url(https://unsplash.com/photos/eBRTYyjwpRY/download?ixid=MnwxMjA3fDB8MXxhbGx8MjB8fHx8fHwyfHwxNjc3ODk4MjYy&force=true&w=1920);
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 0.9;
+}
+
 .nav-bar {
   padding: 40px 120px;
   color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.sidemenu{
+  width: 40%;
 }
 
 ul li {
@@ -425,7 +445,8 @@ td.default {
   flex-wrap: wrap;
   align-items: center;
   flex-direction: row;
-  margin-bottom: 115px;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .controlbtns {
@@ -509,6 +530,16 @@ td.default {
 
   .nav-bar {
     flex-direction: column;
+  }
+
+  .discover{
+    width: 100%;
+  }
+
+  .mainmenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   #banner-title {
