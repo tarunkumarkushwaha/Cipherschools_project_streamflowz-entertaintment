@@ -6,26 +6,30 @@ const Videopage = () => {
   const [clicked, setclicked] = useState(false)
   const [que, setque] = useState("")
 
-  const clickhandler =(e)=>{
-    if(e.target.innerText.length<50){
+  const clickhandler = (e) => {
+    if (e.target.innerText.length < 50) {
       console.log(e.target)
       setque(e.target.innerText)
-      setclicked(true) 
+      setclicked(true)
     }
 
-    else{
+    else {
       console.log("click ignored")
     }
   }
 
-  const backbutton =() => {setclicked(false)}
+  const backbutton = () => { setclicked(false) }
 
-    return (
+  return (
     <>
-    {clicked?<button className='playerbtn' onClick={backbutton}>Back</button>:null}
-    <div id="playlist" onClick={clickhandler}>
-        {clicked?<Videoplayer que={que}/>:<Videolist/>}
+      <div className="flex-column-center">
+        <div className="flex-row-center">
+          {clicked ? <button className='backbtn' onClick={backbutton}>Back</button> : <div className="discover"></div>}
         </div>
+        <div id="playlist" onClick={clickhandler}>
+          {clicked ? <Videoplayer que={que} /> : <Videolist />}
+        </div>
+      </div>
     </>
   )
 }

@@ -8,11 +8,7 @@ const Home = () => {
       <Navbar />
       <div className="mainmenu">
         <Sidemenu/>
-      <div className="flex-column-center">
-      <div className="discover">
-      </div>
       <Videopage />
-      </div>
       </div>
       <div id="footer">
         &copy; 2023 StreamFlowzz Entertainment

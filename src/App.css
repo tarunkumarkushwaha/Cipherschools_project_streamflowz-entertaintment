@@ -78,7 +78,7 @@
 
 .discover {
   border-radius: 15px;
-  width: 85%;
+  width: 70vw;
   height: 240px;
   background-image: url(https://unsplash.com/photos/eBRTYyjwpRY/download?ixid=MnwxMjA3fDB8MXxhbGx8MjB8fHx8fHwyfHwxNjc3ODk4MjYy&force=true&w=1920);
   background-attachment: fixed;
@@ -95,7 +95,18 @@
 }
 
 .sidemenu{
+  padding: 10px;
   width: 40%;
+  align-self: baseline;
+}
+
+.sidebtn{
+  color: #fcf9f9;
+  background-color: #b30000;
+  width: 90%;
+  margin: 10px;
+  height: 50px;
+  text-align: center;
 }
 
 ul li {
@@ -371,16 +382,15 @@ td.default {
   height: 130px;
 }
 
-.playerbtn {
+.backbtn {
   background-color: #db5656;
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  color: #faf5f5;
   height: 40px;
-  width: 40px;
-  border-radius: 25px;
-}
-
-.playerbtn:hover {
-  background: rgba(230, 41, 41, 0.678);
-  color: wheat;
+  width: 80px;
+  border-radius: 15px;
 }
 
 #playlist {
@@ -517,6 +527,22 @@ td.default {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000;
+}
+
+/* video player  */
+
+.player-container{
+  width: 80vw;
+}
+
+.videoplayer{
+  width: 40vw;
+  height: 10%;
+}
+
+.like{
+  height: 20px;
+  width: 20px;
 }
 
 @media only screen and (max-width: 600px) {

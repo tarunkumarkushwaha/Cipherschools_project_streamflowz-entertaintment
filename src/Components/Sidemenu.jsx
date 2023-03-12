@@ -4,7 +4,9 @@ const Sidemenu = () => {
   return (
     <>
     <div className="sidemenu">
-    <p>i am side menu</p>
+     <button className="sidebtn">Recently Added</button>
+     <button className="sidebtn">Most played</button>
+     <button className="sidebtn">Library</button>
     </div>
     </>
   )
