@@ -4,9 +4,10 @@ import {
   Routes
 } from "react-router-dom";
 import "./App.css";
-import Plans from "./Components/Plans";
-import Signup from "./Components/Signup";
+import Library from "./Components/Library";
 import Home from "./Home";
+import Mostplayed from "./Components/Mostplayed";
+import Recentlyadded from "./Components/Recentlyadded";
 
 function App() {
 
@@ -14,8 +15,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/plans" element={<Plans/>}/>
-        <Route path="/signup" element={<Signup/>}/>
+        <Route path="/mostplayed" element={<Mostplayed/>}/>
+        <Route path="/recentlyadded" element={<Recentlyadded/>}/>
+        <Route path="/library" element={<Library/>}/>
       </Routes>
     </BrowserRouter>
   );

@@ -58,14 +58,12 @@
   justify-content: center;
 }
 
-#home,
-#signup,
-#plan {
+.sidebtn{
   color: rgb(250, 168, 165);
   font-weight: bold;
   font-size: large;
   cursor: pointer;
-  width: 100%;
+  width: 90%;
   text-align: center;
   border-radius: 15px;
   padding: 20px 30px;
@@ -100,14 +98,14 @@
   align-self: baseline;
 }
 
-.sidebtn{
+/* .sidebtn{
   color: #fcf9f9;
   background-color: #b30000;
-  width: 90%;
+  
   margin: 10px;
   height: 50px;
   text-align: center;
-}
+} */
 
 ul li {
   list-style: none;
