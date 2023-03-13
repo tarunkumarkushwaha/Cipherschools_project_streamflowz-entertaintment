@@ -11,7 +11,9 @@ const Library = ({logon}) => {
       <div className="mainmenu">
         <Sidemenu/>
         
-        <Videopage/>
+        <div className='noinfo'>
+          <h1>sign in to get the info</h1>
+        </div>
       </div>
       <div id="footer">
         &copy; 2023 StreamFlowzz Entertainment

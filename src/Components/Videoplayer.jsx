@@ -1,6 +1,19 @@
 import React, { useState, useEffect } from "react";
 
-const Videoplayer = ({ que }) => {
+const Videoplayer = () => {
+  const [butn, setbutn] = useState("▶");
+  const ref = React.useRef(null);
+  let que = "https://media.istockphoto.com/id/473082495/video/robin-singing-in-an-urban-park.mp4?s=mp4-640x640-is&k=20&c=j-ywLny4gZOfnrK1IW70Up0HIo84MKNyNg_UzhfSjC4="
+  const togglePlay = ()=>{
+    if (ref.current.paused || ref.current.ended) {
+      ref.current.play();
+      setbutn("||")
+    } else {
+      ref.current.pause();
+      setbutn("▶")
+    }
+  }
+
    // states 
    const [item, setItem] = useState("");
    const [like, setlike] = useState(0);
@@ -41,9 +54,10 @@ const Videoplayer = ({ que }) => {
     <>
       <div className="flex-column-center">
         <div className="player-container">
-          <video controls className='videoplayer'>
+          <video ref={ref} controls className='videoplayer' onClick={togglePlay}>
             <source src={que} type="video/mp4" />
           </video>
+          {/* <button className="vidplaybtn" onClick={togglePlay}>{butn}</button> */}
         </div>
         <div className="flex-row-center">
           <img src="src\assets\like-thumb-up-vote-comments-vote-icon-11563607354tsn0l35fca.png" onClick={likehandler} className='like' alt="like" />
