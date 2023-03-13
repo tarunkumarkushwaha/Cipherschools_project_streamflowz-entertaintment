@@ -48,23 +48,22 @@ const Videoplayer = ({ que }) => {
         <div className="flex-row-center">
           <img src="src\assets\like-thumb-up-vote-comments-vote-icon-11563607354tsn0l35fca.png" onClick={likehandler} className='like' alt="like" />
           <div className="like" >{like}</div>
-        </div>
-        <div className="flex-row-center">
-        <input
+          <input
             type="text"
             value={item}
             onChange={displaychange}
             onKeyDown={onEnterPress}
             placeholder="add a comment"
-            className="comment"
+            className="commentinput"
           ></input><button className="comment-button" onClick={addcomment}>
           Add
         </button>
         </div>
           <div className="commentdisplay">
+            <h3>Comments</h3>
           {comment.map((a) => {
             return <div key={comment.indexOf(a) + 1} className="commentdiv">
-              <p className="to-do" id={comment.indexOf(a) + "commentitem"}> {" "}
+              <p id={comment.indexOf(a) + "commentitem"}> {" "}
                 {comment.indexOf(a) + 1}. {a}
               </p>
             </div>

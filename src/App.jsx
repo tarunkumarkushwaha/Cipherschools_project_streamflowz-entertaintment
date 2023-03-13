@@ -10,7 +10,6 @@ import Mostplayed from "./Components/Mostplayed";
 import Recentlyadded from "./Components/Recentlyadded";
 
 function App() {
-
   return (
     <BrowserRouter>
       <Routes>

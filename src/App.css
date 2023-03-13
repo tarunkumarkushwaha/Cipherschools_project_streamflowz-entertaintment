@@ -25,18 +25,7 @@
   text-align: center;
   top: 10px;
   background-color: beige;
-  margin-left: 200px;
   border-radius: 10px;
-}
-
-#searchbtn {
-  cursor: pointer;
-  height: 50px;
-  border-radius: 10px;
-  margin-left: 2px;
-  width: 100px;
-  background-color: #86332b;
-  color: aliceblue;
 }
 
 .mainmenu{
@@ -63,13 +52,15 @@
   font-weight: bold;
   font-size: large;
   cursor: pointer;
-  width: 90%;
+  width: 75%;
   text-align: center;
   border-radius: 15px;
   padding: 20px 30px;
 }
 
-.btn:hover,
+.sidebtn:hover{
+  background: rgba(250, 168, 165, 0.247);
+}
 .active {
   background: rgba(230, 41, 41, 0.678);
 }
@@ -78,10 +69,14 @@
   border-radius: 15px;
   width: 70vw;
   height: 240px;
-  background-image: url(https://unsplash.com/photos/eBRTYyjwpRY/download?ixid=MnwxMjA3fDB8MXxhbGx8MjB8fHx8fHwyfHwxNjc3ODk4MjYy&force=true&w=1920);
+  background-image: url(https://unsplash.com/photos/JNuKyKXLh8U/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTJ8fG11c2ljJTIwYW5kJTIwdmlkZW98ZW58MHx8fHwxNjc4NjExNDE3&force=true&w=1920);
   background-attachment: fixed;
   background-position: center;
   opacity: 0.9;
+}
+
+video{
+  width: 90vw;
 }
 
 .nav-bar {
@@ -89,34 +84,27 @@
   color: white;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+  justify-content: space-between; 
 }
 
 .sidemenu{
-  padding: 10px;
+  padding: 25px;
   width: 40%;
   align-self: baseline;
 }
 
-/* .sidebtn{
+.signbtn{
+  cursor: pointer;
   color: #fcf9f9;
-  background-color: #b30000;
-  
+  background-color: #e73232;
+  border-radius: 15px;
   margin: 10px;
   height: 50px;
+  width: 100px;
   text-align: center;
-} */
-
-ul li {
-  list-style: none;
-  color: aliceblue;
-  margin: 8px 25px;
-  text-decoration: none;
-}
-
-a {
-  margin: 8px 25px;
-  text-decoration: none;
 }
 
 h2 {
@@ -124,53 +112,13 @@ h2 {
   margin-right: 10px;
 }
 
-#banner-title {
-  margin: 140px;
-  color: white;
-}
-
-#banner-title h1 {
-  font-size: 64px;
-  margin-bottom: 30px;
-}
-
-#banner-title h1 span {
-  color: rgba(230, 41, 41, 0.678);
-}
-
 ul li a {
   text-decoration: none;
   color: aliceblue;
 }
 
-.invisible {
-  display: none;
-}
-
 a {
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-.wordCarousel div {
-  overflow: hidden;
-  position: absolute;
-  display: inline-block;
-  height: 95px;
-}
-
-.wordCarousel div li {
-  text-transform: capitalize;
-  font-size: 64px;
-  font-weight: bold;
-  padding: 0px 10px;
-  height: 70px;
-  margin-bottom: 70px;
-  display: block;
-  color: rgba(230, 41, 41, 0.678);
 }
 
 #footer {
@@ -179,35 +127,7 @@ a:hover {
   margin: 25px;
 }
 
-/* sign up  */
-#login-box {
-  position: relative;
-  margin: 6% auto;
-  margin-top: -10px;
-  width: 600px;
-  height: 400px;
-  background: #fffdfd;
-  border-radius: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-
-}
-
-.leftbox {
-  padding: 40px;
-  width: 300px;
-  height: 400px;
-
-}
-
-h1 {
-  margin: 0 0 20px 0;
-  font-weight: 300;
-  font-size: 28px;
-  color: #da2828;
-}
-
-input[type="text"],
-input[type="password"] {
+input[type="text"]{
   display: block;
   box-sizing: border-box;
   margin-bottom: 20px;
@@ -221,170 +141,11 @@ input[type="password"] {
   font-size: 15px;
 }
 
-
-input[type="submit"] {
-  margin-top: 28px;
-  width: 120px;
-  height: 32px;
-  background: #d45637;
-  border: none;
-  border-radius: 2px;
-  color: #FFF;
-  font-family: sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-
-
-.or {
-  position: absolute;
-  top: 180px;
-  left: 280px;
-  width: 40px;
-  height: 40px;
-  background: rgb(231, 76, 76);
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  line-height: 40px;
-  text-align: center;
-  color: #FFF;
-}
-
-.rightbox {
-  position: absolute;
-  top: 0;
-  right: 0;
-  box-sizing: border-box;
-  padding-left: 50px;
-  padding-top: 150px;
-  width: 300px;
-  height: 400px;
-}
-
-button.facebook,
-button.google {
-  margin-bottom: 20px;
-  width: 220px;
-  height: 36px;
-  border: none;
-  border-radius: 2px;
-  color: #FFF;
-  font-family: sans-serif;
-  font-weight: 500;
-  transition: 0.2s ease;
-  cursor: pointer;
-}
-
-button.facebook {
-  background: #32508E;
-}
-
-button.facebook:hover {
-  background: #8aa2d3;
-}
-
-button.google {
-  background: #DD4B39;
-}
-
-button.google:hover,
-.submit:hover {
-  background: #c57c73;
-}
-
-/* plan css */
-h3 {
-  color: #ffffff;
-  text-align: center;
-  font-size: x-large;
-  margin-bottom: 30px;
-}
-
-article {
-  margin-left: 60px;
-  padding: 35px;
-  position: relative;
-}
-
-li {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  table-layout: fixed;
-  width: 100%;
-}
-
-tbody {
-  color: #FFF;
-}
-
-th {
-  background: #F5F5F5;
-  display: none;
-}
-
-td,
-th {
-  height: 53px
-}
-
-td+td,
-th+th {
-  text-align: center;
-  display: none;
-}
-
-td.default {
-  display: table-cell;
-}
-
-.text-side {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.text-top {
-  position: relative;
-  top: -9px;
-  left: -2px;
-}
-
-.hide {
-  border: 0;
-  background: none;
-}
-
-
-.tick {
-  font-size: 18px;
-  color: #2CA01C;
-}
-
-.wrong {
-  font-size: 18px;
-  color: red;
-}
-
-.playercontrols {
-  display: flex;
-  align-items: center;
-  background-color: #883026;
-  justify-content: center;
-  position: fixed;
-  width: 100%;
-  top: 80%;
-  height: 130px;
-}
-
 .backbtn {
   background-color: #db5656;
   position: absolute;
-  top: 1%;
-  left: 2%;
+  top: 14%;
+  right: 2%;
   color: #faf5f5;
   height: 40px;
   width: 80px;
@@ -424,17 +185,6 @@ td.default {
   transition-duration: 0.1s;
 }
 
-#currentsongimage {
-  height: 60px;
-  width: 61px;
-  border-radius: 15px;
-  margin: 5px;
-}
-
-#currentsongname {
-  margin: 5px;
-}
-
 .songnames {
   position: relative;
   top: 35%;
@@ -455,53 +205,6 @@ td.default {
   flex-direction: row;
   justify-content: center;
   margin-bottom: 50px;
-}
-
-.controlbtns {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100px;
-  padding: 10px;
-  margin: 5px;
-  background: #fa9797;
-  border-radius: 20px;
-}
-
-#range {
-  width: 70vw;
-  margin: 20px;
-}
-
-.slider {
-  height: 60px;
-  padding: 30px;
-  background: #fa9797;
-  border-radius: 20px;
-  box-shadow: 0px 15px 40px #0a0a0a66;
-}
-
-.slider input[type="range"] {
-  -webkit-appearance: none;
-  width: 420px;
-  height: 2px;
-  background: black;
-  border: none;
-  outline: none;
-}
-
-.slider input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 30px;
-  height: 30px;
-  background: black;
-  border: 2px solid black;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.slider input[type="range"]::-webkit-slider-thumb:hover {
-  background: black;
 }
 
 /* custom scroll bar  */
@@ -536,11 +239,45 @@ td.default {
 .videoplayer{
   width: 40vw;
   height: 10%;
+  border-radius: 15px;
 }
 
 .like{
   height: 20px;
   width: 20px;
+  color: #AAA;
+}
+
+.commentinput{
+  height: 100px;
+  width: 350px;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  top: 10px;
+  background-color: rgb(247, 247, 237);
+  border-radius: 10px;
+}
+
+.comment-button{
+  border-radius: 15px;
+  background-color: #e7b6b6;
+  margin: 30px;
+  height: 30px;
+  width: 100px;
+  text-align: center;
+}
+
+.commentdisplay{
+  padding: 25px;
+  border-radius: 15px;
+  width: 40vw;
+  background-color: #AAA;
+  height: auto;
+}
+
+.commentdiv{
+  margin: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -577,10 +314,6 @@ td.default {
     /* margin-bottom: 200px; */
   }
 
-  .slider {
-    padding: 45px 5px 10px 5px;
-  }
-
   #search {
     margin-top: 10px;
     margin-left: 0px;
@@ -595,58 +328,4 @@ td.default {
     width: 80%;
     margin: 20px;
   }
-
-  .playercontrols {
-    height: auto;
-    bottom: 0vh;
-  }
-
-  #range {
-    width: auto;
-  }
-
-  .playerbtn {
-    background-color: #db5656;
-    height: 30px;
-    width: 40px;
-    border-radius: 15px;
-  }
-
-  #currentsongimage {
-    height: 30px;
-    width: 30px;
-    margin: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-  }
-
-  #currentsongname {
-    margin: 10px;
-    margin-bottom: 20px;
-  }
-
-  article {
-    margin-left: 0px;
-  }
-
-  #login-box {
-    width: 325px;
-    height: 600px;
-  }
-
-  .or {
-    left: 50%;
-    top: 65%;
-  }
-
-  .rightbox {
-    top: 50%;
-    right: 5%;
-    height: 298px;
-  }
-
-  .leftbox {
-    width: auto;
-  }
-
 }
