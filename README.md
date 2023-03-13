@@ -1,11 +1,15 @@
 # streamflowz-entertaintment
 
-its design is inspired with stramflowz music wich was developed by me
+Its design is inspired with streamflowz music wich was developed by me.
 
-https://streamflowzz.netlify.app/
+It is a online video streaming site.
 
-it is a online video streamng site
+API integration is incomplete because the API is not deployed.
 
-it uses tarunvideoAPI to fetch royality free videos
+githublink of the API 
+
+https://github.com/tarunkumarkushwaha/Node-Express
+
+there might be some glitches.
 
 any suggestions for improvement of the are welcome.
